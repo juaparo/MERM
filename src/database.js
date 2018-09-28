@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.set('useFindAndModify', false);
 const URI = 'mongodb://localhost:27017/merm-tasks';
 
 mongoose.connect(URI, {useNewUrlParser: true})
